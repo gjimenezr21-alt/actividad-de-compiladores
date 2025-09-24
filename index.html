@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador Léxico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador Léxico</h1>
+        
+        <div class="validation-section">
+            <label for="email">Correo Institucional:</label>
+            <input type="text" id="email" placeholder="ejemplo@curnvirtual.edu.co o ejemplo@curn.edu.co">
+            <button onclick="validateEmail()">Verificar</button>
+            <p id="email-result"></p>
+        </div>
+
+        <div class="validation-section">
+            <label for="hex">Número Hexadecimal:</label>
+            <input type="text" id="hex" placeholder="#FFF o #FFFFFF">
+            <button onclick="validateHex()">Verificar</button>
+            <p id="hex-result"></p>
+        </div>
+
+        <div class="validation-section">
+            <label for="decimal">Número Decimal:</label>
+            <input type="text" id="decimal" placeholder="0,0 a 5,0">
+            <button onclick="validateDecimal()">Verificar</button>
+            <p id="decimal-result"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
